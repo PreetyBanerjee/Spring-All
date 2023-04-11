@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+<section class="container-fluid signup-wrapper py-5">
+    <div class="container signup-inner text-dark p-5">
+        <h1 class="display-5 fw-bold text-center pb-5 text-uppercase">SignUp</h1>
+        <form (ngSubmit)="register()">
+             
+            <div class="mb-3">
+                <label for="exampleInputFirstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" [(ngModel)]="user.firstName" name="firsName" aria-describedby="firstName">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputLastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" [(ngModel)]="user.lastName" name="lastName" aria-describedby="lastName">
+            </div>
+
+            <div class="mb-3">
+                <label for="phoneNumber" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" [(ngModel)]="user.phone_no" name="phone_no" id="phoneNumber" />
+              </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="text" class="form-control" [(ngModel)]="user.userEmail"  name="userEmail" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3">
+                <label for="userAge" class="form-label">Age</label>
+                <input type="number" class="form-control" [(ngModel)]="user.userAge"  name="userAge" aria-describedby="userAge">
+            </div>
+
+            <div class="mb-3">
+                <label for="userGender" class="form-label">Gender</label>
+                <input type="text" class="form-control" [(ngModel)]="user.gender"userGender="Male" name="gender" aria-describedby="userGender">
+            </div>
+
+            <div class="mb-3">
+                <label for="city" class="form-label">City</label>
+                <input type="text" class="form-control" [(ngModel)]="user.city" name="city" aria-describedby="city">
+            </div>
+
+
+            <div class="mb-4">
+                <label for="userPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" [(ngModel)]="user.userpwd" name="userpwd" id="userPassword"/>
+              </div>
+
+        
+            <button nz-button class="login-form-button login-form-margin">Signup</button>
+
+        </form>
+    </div>
+</section>

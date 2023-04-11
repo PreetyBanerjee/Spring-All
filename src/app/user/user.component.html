@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+<h1 class="container-fluid"> User Profile View and Update Form</h1>
+<div class="settings-message" id="js-message"></div>
+<form>
+  <input id="js-file-uploader" class="hidden" name="profile-picture" type="file" accept="image/png, image/jpeg" />
+
+  <div id="js-profile-pic" class="profile-pic__container">Upload Profile Pic
+    <div id="js-profile-trigger" class="profile-pic__foreground">Upload Profile Pic</div>
+  </div>
+  
+  <div class="input__container">
+    <div class="input-container__single">
+      <label for="name">Name:</label>
+      <input type="text" required name="name" id="name" />
+    </div>
+    <div class="input-container__single">
+      <label for="email">Email:</label>
+      <input type="email" required name="email" id="email" />
+    </div>
+    <div class="input-container__single">
+      <label for="js-mobileno">Mobile No:</label>
+      <input type="mobileno" required id="js-mobileno" name="mobileno" />
+      <span id="js-toggle-password" class="input-action">Enter Correctly</span>
+    </div>
+    <div class="input-container__single">
+      <label for="js-address">Confirm Address:</label>
+      <input type="Address" required id="js-address" name="confirm-address" />
+      <span class="input-action" id="js-suggest-password">We never shere your details </span>
+    </div>
+  </div>
+  
+  <input type="submit" value="Save Profile" />
+  <input type="submit" value="Update Profile" />
+</form>
+<app-footer></app-footer>
+    
